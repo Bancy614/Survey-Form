@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container" >
+    <header class="header" >
+      <h1 id="title" >Survey Form Bancy</h1>
+      <p class="description" >Thank you for taking the time to help us improve the platform</p>
+    </header>
+    <form action="http://127.0.0.1:5500/submission.html" id="survey-form" >
+      <div class="form-group">
+        <label for="name">Name
+          <input type="text" name="name" id="name" placeholder="Name">
+        </label>
+      </div><br>
+
+      <div class="form-group">
+        <label for="email">Email
+          <input type="email" name="email" id="email" placeholder="Email">
+        </label>
+      </div><br>
+
+      <div class="form-group">
+        <label for="phone number">Phone Number
+          <input type="number" name="number" id="number" placeholder="Phone Number">
+        </label>
+      </div><br>
+
+      <div class="form-group">
+        <label for="address">Address <span class="clue"> (Optional)</span>
+          <input type="address" name="address" id="address" placeholder="Address">
+        </label>
+      </div><br>
+
+      <div class="form-group" >
+        <p id="quest"> Which option best describe your current role?</p>
+        <select name="role" id="dropdown" class="form-control" >
+          <option value="disabled">Select currect role</option>
+          <option value="student">Student</option>
+          <option value="employed">Employed</option>
+          <option value="selfemployed">Self Employed</option>
+          <option value="unemployed">Unemployed</option>
+        </select><br><br>
+      </div>
+      
+      <div class="form-group" >
+        <p id="quest" >How did you come to know about us?</p>
+        <label for="google search">
+          <input type="radio" name="source-value" value="Google search" checked>Google Search
+        </label>
+
+        <label for="friends">
+          <input type="radio" name="source-value" value="friends">Friends
+        </label>
+
+        <label for="social media">
+          <input type="radio" name="source-value" value="social media">Social media
+        </label>
+
+        <label for="other">
+          <input type="radio" name="source-value" value="other">Google Search
+        </label>
+      </div><br>
+
+      <div class="form-group" >
+        <p id="quest">What would you like to see improved?</p>
+        <label for="frontend">
+          <input type="checkbox" name="improve" value="frontend" checked>Frontend
+        </label>
+
+        <label for="backend">
+          <input type="checkbox" name="improve" value="backend">backend
+        </label>
+
+        <label for="fullstack">
+          <input type="checkbox" name="improve" value="fullstack">Fullstack
+        </label>
+
+        <label for="other">
+          <input type="checkbox" name="improve" value="other">Other
+        </label>
+      </div><br>
+
+      <div class="form-group" >
+        <p id="quest">Give us your feedback</p>
+        <textarea name="feedback" id="feedback" cols="30" rows="5" 
+        class="textarea" placeholder="Enter your feedback here" ></textarea>
+      </div><br>
+
+      <div class="form-group">
+        <button type="submit" id="submit" class="btn" >Submit</button>
+      </div>
+
+      </div>
+
+    </form>
+    
+  </div>
+</body>
+</html>
